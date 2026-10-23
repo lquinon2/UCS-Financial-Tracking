@@ -1,0 +1,89 @@
+
+.create-account-page {
+    background-color: #1c1919;
+    padding: 40px 0;
+    min-height: 100vh;
+}
+
+.account-card {
+    max-width: 550px;
+    margin: auto;
+    background-color: #f8f6f3;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.account-header {
+    background-color: #242222;
+    color: white;
+    padding: 35px;
+}
+
+.logo {
+    background-color: #e31837;
+    color: #ffd200;
+    font-size: 28px;
+    font-weight: bold;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    color: #ffd200;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.account-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.description {
+    color: #aaaaaa;
+    margin-top: 15px;
+}
+
+.account-body {
+    padding: 35px;
+}
+
+.account-body .form-label {
+    font-weight: bold;
+}
+
+.account-body .form-control,
+.account-body .form-select {
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.create-button {
+    background-color: #e31837;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.create-button:hover {
+    background-color: #b5102b;
+    color: white;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #777777;
+}
+
+.login-text a {
+    color: #e31837;
+    text-decoration: none;
+}

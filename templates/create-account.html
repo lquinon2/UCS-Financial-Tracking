@@ -1,0 +1,72 @@
+
+{% extends "base.html" %}
+
+{% block title %}Create Account{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<div class="create-account-page">
+    <div class="container mt-5">
+        <div class="account-card">
+
+            <div class="account-header">
+                <div class="logo">M</div>
+
+                <p class="subtitle">JOIN THE WORKSPACE</p>
+                <h1>CREATE AN ACCOUNT</h1>
+                <p class="description">
+                    Use your UMD email so team leadership can verify your membership.
+                </p>
+            </div>
+
+            <div class="account-body">
+                <form method="POST">
+
+                    <div class="mb-3">
+                        <label for="full_name" class="form-label">Full name</label>
+                        <input type="text" class="form-control" id="full_name"
+                               name="full_name" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">UMD email</label>
+                        <input type="email" class="form-control" id="email"
+                               name="email" placeholder="name@terpmail.umd.edu" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="team" class="form-label">Team</label>
+                        <select class="form-select" id="team" name="team" required>
+                            <option value="" selected disabled>Select your team</option>
+                            <option value="A">Team A</option>
+                            <option value="B">Team B</option>
+                            <option value="C">Team C</option>
+                            <option value="D">Team D</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password"
+                               name="password" placeholder="At least 6 characters"
+                               minlength="6" required>
+                    </div>
+
+                    <button type="submit" class="btn create-button w-100">
+                        Create team account →
+                    </button>
+
+                </form>
+
+                <p class="login-text">
+                    Already have an account? <a href="/login">Log in</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
